@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+    /* color */
+    --canvas: #faf9f6;
+    --canvas-dim: #f1efe9;
+    --ink: #201f1c;
+    --ink-soft: #4a463f;
+    --muted: #77726a;
+    --line: #e2ded4;
+    --pine: #2f4d38;
+    --pine-dark: #203527;
+    --gold: #b8862f;
+    --gold-dim: #e8d9b8;
+    --card: #ffffff;
+    --danger: #a5402f;
+
+    /* type */
+    --font-display: "Bitter", Georgia, serif;
+    --font-body: "Work Sans", system-ui, sans-serif;
+    --font-mono: "Space Mono", "Courier New", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-display);
+    margin: 0;
+    color: var(--ink);
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font-family: var(--font-body);
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+:focus-visible {
+    outline: 2px solid var(--pine);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
