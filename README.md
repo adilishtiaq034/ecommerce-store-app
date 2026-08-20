@@ -1,6 +1,6 @@
 # Ecommerce App
 
-A modern ecommerce frontend built with React featuring product browsing, category filtering, shopping cart functionality, and a responsive user interface.
+A modern ecommerce frontend built with React.js featuring product browsing, category filtering, shopping cart functionality, and a responsive user interface.
 
 ##  Live Demo
 
